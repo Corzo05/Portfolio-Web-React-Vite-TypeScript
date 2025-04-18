@@ -1,0 +1,1297 @@
+.div_flex {
+    display: flex;
+}
+
+.flex_column {
+    flex-direction: column;
+}
+
+.flex_row {
+    flex-direction: row;
+}
+
+.alignItemsCenter {
+    align-items: center;
+}
+
+.img_inicio {
+    filter: drop-shadow(5px 5px 10px rgba(255, 255, 255, 0.3));
+    animation: upAndDown infinite 15s ease-in-out;
+}
+
+.content_project {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0 20px;
+    align-items: center;
+}
+
+/* Components */
+
+[id="card_inicio"],
+[id="card_aboutMe"],
+[id="card_contact"],
+[id="img_vector"],
+[id="mini"],
+[id="card_project1"],
+[id="card_project2"],
+[id="card_project3"],
+[id="card_project4"] {
+    transition: all ease-in-out 0.5s;
+}
+
+[id="card_inicio"]:hover,
+[id="card_aboutMe"]:hover,
+[id="card_contact"]:hover {
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
+    background-color: #282828;
+}
+
+[id="img_vector"]:hover {
+    outline: solid 2px rgba(255, 255, 255, 0.1);
+}
+
+[id="mini"]:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
+}
+
+[id="card_project1"]:hover,
+[id="card_project2"]:hover,
+[id="card_project3"]:hover,
+[id="card_project4"]:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes upAndDown {
+    7% {
+        transform: translateY(-15px);
+    }
+
+    14% {
+        transform: translateY(-15px);
+    }
+
+    21% {
+        transform: translateY(15px);
+    }
+
+    28% {
+        transform: translateY(15px);
+    }
+
+    35% {
+        transform: translateY(-15px);
+    }
+
+    42% {
+        transform: translateY(-15px);
+    }
+
+    49% {
+        transform: translateY(15px);
+    }
+
+    56% {
+        transform: translateY(15px);
+    }
+
+    63% {
+        transform: translateY(-15px);
+    }
+
+    70% {
+        transform: translateY(-15px);
+    }
+
+    77% {
+        transform: translateY(15px);
+    }
+
+    84% {
+        transform: translateY(15px);
+    }
+
+    91% {
+        transform: translateY(-15px);
+    }
+
+    98% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+/* Responsive */
+
+/* Pantallas grandes */
+@media (min-width: 1581px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    [id="label_menu"] {
+        display: none;
+    }
+
+    [id="header"] {
+        width: 100vw;
+        height: 10vh;
+    }
+
+    [id="header"] a{
+        font-size: 20px;
+    }
+
+    [id="buttonList"] {
+        display: block;
+    }
+
+
+    [id="Inicio"] {
+        flex-direction: row;
+        height: 100vh;
+        padding: 10vh 8vw 6vh 4vw;
+    }
+
+    [id="card_inicio"] {
+        width: auto;
+        height: auto;
+        margin: 8vh 8vw 5vh 8vw;
+        padding: 4vh;
+    }
+
+    [id="cardBody_home"] {
+        justify-content: center;
+    }
+
+    [id="title_home"],
+    [id="title_aboutMe"],
+    [id="title_habilities"],
+    [id="title_projects"],
+    [id="title_contact"] {
+        font-size: 60px;
+    }
+
+    [id="subtitle_home"],
+    [id="subtitle_aboutMe"] {
+        font-size: 38px;
+    }
+
+    [id="text_home"] {
+        font-size: 18px;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    [id="SobreMi"] {
+        height: auto;
+        padding: 5vh 8vw 5vh 8vw;
+    }
+
+    [id="container-card-image"] {
+        flex-direction: row;
+        gap: 9vw;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    [id="container-cardText"] {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    [id="text-aboutMe"] {
+        font-size: 20px;
+        line-height: 1.6;
+        text-align: justify;
+        padding: 20px;
+    }
+
+    [id="img_vector"] {
+        width: auto;
+        height: auto;
+        margin-top: 3vh;
+        padding: 2px;
+    }
+
+    [id="Habilidades"] {
+        height: auto;
+        align-items: flex-start;
+        padding: 5vh 10vw 10vh 10vw;
+    }
+
+    [id="container-titleHabilities"] {
+        width: 90vw;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    [id="container_grid"] {
+        overflow: hidden;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        width: 90vw;
+        height: 60vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        row-gap: 10%;
+    }
+
+    [id="mini"] {
+        width: 18vw;
+        height: auto;
+        align-items: center;
+    }
+
+    [id="mini"] img {
+        width: 80px;
+        height: 80px;
+    }
+
+    [id="mini"] h4 {
+        font-size: 27px;
+    }
+
+    [id="miniCardBody"] {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    [id="Proyectos"]{
+        height: auto;
+        padding: 5vh 5vw 10vh 5vw;
+    }
+
+    [id="div_general_projects"] {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    [id="div_projects"] {
+        width: 90vw;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    [id="card_project1"],
+    [id="card_project2"],
+    [id="card_project3"],
+    [id="card_project4"] {
+        width: 27vw;
+        height: 70vh;
+    }
+
+    [id="card_project1"] img,
+    [id="card_project2"] img,
+    [id="card_project3"] img,
+    [id="card_project4"] img{
+        width: 27vw;
+        height: 35vh;
+    }
+
+    [id="subtitle_proyect"]{
+        font-size: 27px;
+    }
+
+    [id="text_project"]{
+        font-size: 17px;
+        line-height: 24px;
+        text-align: justify;
+    }
+
+    [id="button_project"]{
+        font-size: 17px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    [id="button_projectMargin"]{
+        font-size: 17px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    [id="Contactame"]{
+        height: auto;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+
+    [id="container_general_contact"]{
+        width: 90vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    [id="container_contact"]{
+        flex-direction: row;
+    }
+
+    [id="card_contact"]{
+        width: 45vw;
+        height: auto;
+        padding: 5vh;
+    }
+
+    [id="containerRedes"]{
+        flex-direction: column;
+    }
+    
+    [id="text_contact"]{
+        width: 27vw;
+        font-size: 18px;
+    }
+
+    [id="Footer"]{
+        max-width: 100vw;
+    }
+
+    .img_inicio {
+        width: 80vw;
+        height: 65vh;
+        margin-bottom: 5vh;
+    }
+
+    .img_vector {
+        width: 25vw;
+        height: 75vh;
+    }
+
+    .imgTelf{
+        width: 20vw;
+        height: 35vh;
+    }
+}
+
+/* Laptops */
+@media (min-width: 1101px) and (max-width: 1580px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    [id="label_menu"] {
+        display: none;
+    }
+
+    [id="header"] {
+        width: 100vw;
+        height: 10vh;
+    }
+
+    [id="buttonList"] {
+        display: block;
+    }
+
+
+    [id="Inicio"] {
+        flex-direction: row;
+        height: 100vh;
+        padding: 10vh 8vw 6vh 4vw;
+    }
+
+    [id="card_inicio"] {
+        width: auto;
+        height: auto;
+        margin: 8vh 8vw 5vh 8vw;
+        padding: 4vh;
+    }
+
+    [id="cardBody_home"] {
+        justify-content: center;
+    }
+
+    [id="title_home"],
+    [id="title_aboutMe"],
+    [id="title_habilities"],
+    [id="title_projects"],
+    [id="title_contact"] {
+        font-size: 55px;
+    }
+
+    [id="subtitle_home"],
+    [id="subtitle_aboutMe"] {
+        font-size: 34px;
+    }
+
+    [id="text_home"] {
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    [id="SobreMi"] {
+        height: auto;
+        padding: 5vh 8vw 5vh 8vw;
+    }
+
+    [id="container-card-image"] {
+        flex-direction: row;
+        gap: 9vw;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    [id="container-cardText"] {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    [id="text-aboutMe"] {
+        font-size: 18px;
+        line-height: 1.6;
+        text-align: justify;
+        padding: 18px;
+    }
+
+    [id="img_vector"] {
+        width: auto;
+        height: auto;
+        margin-top: 3vh;
+        padding: 2px;
+    }
+
+    [id="Habilidades"] {
+        height: auto;
+        align-items: flex-start;
+        padding: 5vh 10vw 10vh 10vw;
+    }
+
+    [id="container-titleHabilities"] {
+        width: 90vw;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    [id="container_grid"] {
+        overflow: hidden;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        width: 90vw;
+        height: 60vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        row-gap: 10%;
+    }
+
+    [id="mini"] {
+        width: 18vw;
+        height: auto;
+        align-items: center;
+    }
+
+    [id="mini"] img {
+        width: 75px;
+        height: 75px;
+    }
+
+    [id="mini"] h4 {
+        font-size: 25px;
+    }
+
+    [id="miniCardBody"] {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    [id="Proyectos"]{
+        height: auto;
+        padding: 5vh 5vw 10vh 5vw;
+    }
+
+    [id="div_general_projects"] {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    [id="div_projects"] {
+        width: 90vw;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    [id="card_project1"],
+    [id="card_project2"],
+    [id="card_project3"],
+    [id="card_project4"] {
+        width: 27vw;
+        height: 73vh;
+    }
+
+    [id="card_project1"] img,
+    [id="card_project2"] img,
+    [id="card_project3"] img,
+    [id="card_project4"] img{
+        width: 27vw;
+        height: 35vh;
+    }
+
+    [id="subtitle_proyect"]{
+        font-size: 25px;
+    }
+
+    [id="text_project"]{
+        font-size: 15px;
+        line-height: 20px;
+        text-align: justify;
+    }
+
+    [id="button_project"], [id="button_projectMargin"]{
+        font-size: 17px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    [id="Contactame"]{
+        height: auto;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+
+    [id="container_general_contact"]{
+        width: 90vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    [id="container_contact"]{
+        flex-direction: row;
+    }
+
+    [id="card_contact"]{
+        width: 40vw;
+        height: auto;
+        padding: 5vh;
+    }
+
+    [id="containerRedes"]{
+        flex-direction: column;
+    }
+
+    [id="text_contact"]{
+        width: 25vw;
+        font-size: 16px;
+    }
+
+    [id="Footer"]{
+        max-width: 100vw;
+    }
+
+    .img_inicio {
+        width: 80vw;
+        height: 65vh;
+        margin-bottom: 5vh;
+    }
+
+    .img_vector {
+        width: 25vw;
+        height: 75vh;
+    }
+
+    .imgTelf{
+        width: 20vw;
+        height: 35vh;
+    }
+}
+
+/* Ipad Pro */
+@media only screen 
+  and (device-width: 1024px) 
+  and (device-height: 1366px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    [id="header"] {
+        width: 100vw;
+        height: 8vh;
+    }
+
+    [id="Inicio"] {
+        flex-direction: column;
+        height: auto;
+        padding-top: 10vh;
+    }
+
+    [id="card_inicio"] {
+        width: auto;
+        height: auto;
+        margin: 8vh 10vw 5vh 10vw;
+        padding: 4vh;
+    }
+
+    [id="cardBody_home"] {
+        justify-content: center;
+    }
+
+    [id="title_home"],
+    [id="title_aboutMe"],
+    [id="title_habilities"],
+    [id="title_projects"],
+    [id="title_contact"] {
+        font-size: 55px;
+    }
+
+    [id="subtitle_home"],
+    [id="subtitle_aboutMe"] {
+        font-size: 42px;
+    }
+
+    [id="text_home"] {
+        font-size: 21px;
+        line-height: 1.7;
+        text-align: justify;
+    }
+
+    [id="SobreMi"] {
+        height: auto;
+        padding: 5vh 5vw 5vh 5vw;
+    }
+
+    [id="container-card-image"] {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    [id="container-cardText"] {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    [id="text-aboutMe"] {
+        font-size: 21px;
+        line-height: 1.7;
+        text-align: justify;
+        padding: 20px;
+    }
+
+    [id="img_vector"] {
+        width: auto;
+        height: auto;
+        margin-top: 3vh;
+        padding: 2px;
+    }
+
+    [id="Habilidades"] {
+        height: auto;
+        align-items: flex-start;
+        padding: 5vh 5vw 5vh 5vw;
+    }
+
+    [id="container-titleHabilities"] {
+        width: 90vw;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    [id="container_grid"] {
+        overflow: hidden;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        width: 90vw;
+        height: 38vh;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 5%;
+    }
+
+    [id="mini"] {
+        width: 26vw;
+        height: auto;
+        align-items: center;
+    }
+
+    [id="mini"] img {
+        width: 50px;
+        height: 50px;
+    }
+
+    [id="mini"] h4 {
+        font-size: 17px;
+    }
+
+    [id="miniCardBody"] {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    [id="Proyectos"]{
+        height: auto;
+        padding: 5vh 5vw 5vh 5vw;
+    }
+
+    [id="div_general_projects"] {
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    [id="div_projects"] {
+        width: 90vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    [id="card_project1"],
+    [id="card_project2"],
+    [id="card_project3"],
+    [id="card_project4"] {
+        width: 80vw;
+        height: auto;
+    }
+
+    [id="card_project1"] img,
+    [id="card_project2"] img,
+    [id="card_project3"] img,
+    [id="card_project4"] img{
+        width: 80vw;
+        height: 30vh;
+    }
+
+    [id="subtitle_proyect"]{
+        font-size: 35px;
+    }
+
+    [id="text_project"]{
+        font-size: 17px;
+        line-height: 25px;
+        text-align: justify;
+    }
+
+    [id="button_project"], [id="button_projectMargin"]{
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+    [id="Contactame"]{
+        height: auto;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+
+    [id="container_general_contact"]{
+        width: 90vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    [id="container_contact"]{
+        flex-direction: column;
+    }
+
+    [id="card_contact"]{
+        width: auto;
+        height: auto;
+        padding: 4vh;
+    }
+
+    [id="containerRedes"]{
+        flex-direction: row;
+    }
+
+    [id="text_contact"]{
+        width: 80vw;
+        font-size: 20px;
+    }
+
+    [id="Footer"]{
+        max-width: 100vw;
+    }
+
+    .img_inicio {
+        width: 70vw;
+        height: 45vh;
+        margin-bottom: 10vh;
+    }
+
+    .img_vector {
+        width: 65vw;
+        height: 55vh;
+    }
+
+    .imgTelf{
+        width: 35vw;
+        height: 20vh;
+    }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1100px) {
+    
+    body{
+        overflow-x: hidden;
+    }
+
+    [id="header"] {
+        width: 100vw;
+        height: 8vh;
+    }
+
+    [id="buttonList"] {
+        display: none;
+    }
+
+
+    [id="Inicio"] {
+        flex-direction: column;
+        height: auto;
+        padding-top: 10vh;
+    }
+
+    [id="card_inicio"] {
+        width: auto;
+        height: auto;
+        margin: 8vh 10vw 5vh 10vw;
+        padding: 4vh;
+    }
+
+    [id="cardBody_home"] {
+        justify-content: center;
+    }
+
+    [id="title_home"],
+    [id="title_aboutMe"],
+    [id="title_habilities"],
+    [id="title_projects"],
+    [id="title_contact"] {
+        font-size: 55px;
+    }
+
+    [id="subtitle_home"],
+    [id="subtitle_aboutMe"] {
+        font-size: 42px;
+    }
+
+    [id="text_home"] {
+        font-size: 21px;
+        line-height: 1.7;
+        text-align: justify;
+    }
+
+    [id="SobreMi"] {
+        height: auto;
+        padding: 5vh 5vw 5vh 5vw;
+    }
+
+    [id="container-card-image"] {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    [id="container-cardText"] {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    [id="text-aboutMe"] {
+        font-size: 21px;
+        line-height: 1.7;
+        text-align: justify;
+        padding: 20px;
+    }
+
+    [id="img_vector"] {
+        width: auto;
+        height: auto;
+        margin-top: 3vh;
+        padding: 2px;
+    }
+
+    [id="Habilidades"] {
+        height: auto;
+        align-items: flex-start;
+        padding: 5vh 5vw 5vh 5vw;
+    }
+
+    [id="container-titleHabilities"] {
+        width: 90vw;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    [id="container_grid"] {
+        overflow: hidden;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        width: 90vw;
+        height: 38vh;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 5%;
+    }
+
+    [id="mini"] {
+        width: 26vw;
+        height: auto;
+        align-items: center;
+    }
+
+    [id="mini"] img {
+        width: 50px;
+        height: 50px;
+    }
+
+    [id="mini"] h4 {
+        font-size: 17px;
+    }
+
+    [id="miniCardBody"] {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    [id="Proyectos"]{
+        height: auto;
+        padding: 5vh 5vw 5vh 5vw;
+    }
+
+    [id="div_general_projects"] {
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    [id="div_projects"] {
+        width: 90vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    [id="card_project1"],
+    [id="card_project2"],
+    [id="card_project3"],
+    [id="card_project4"] {
+        width: 80vw;
+        height: auto;
+    }
+
+    [id="card_project1"] img,
+    [id="card_project2"] img,
+    [id="card_project3"] img,
+    [id="card_project4"] img{
+        width: 80vw;
+        height: 30vh;
+    }
+
+    [id="subtitle_proyect"]{
+        font-size: 35px;
+    }
+
+    [id="text_project"]{
+        font-size: 17px;
+        line-height: 25px;
+        text-align: justify;
+    }
+
+    [id="button_project"], [id="button_projectMargin"]{
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+    [id="Contactame"]{
+        height: auto;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+
+    [id="container_general_contact"]{
+        width: 90vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    [id="container_contact"]{
+        flex-direction: column;
+    }
+
+    [id="card_contact"]{
+        width: auto;
+        height: auto;
+        padding: 4vh;
+    }
+
+    [id="containerRedes"]{
+        flex-direction: row;
+    }
+
+    [id="text_contact"]{
+        width: 80vw;
+        font-size: 20px;
+    }
+
+    [id="Footer"]{
+        max-width: 100vw;
+    }
+
+    .img_inicio {
+        width: 70vw;
+        height: 45vh;
+        margin-bottom: 10vh;
+    }
+
+    .img_vector {
+        width: 65vw;
+        height: 55vh;
+    }
+
+    .imgTelf{
+        width: 35vw;
+        height: 20vh;
+    }
+}
+
+/* Telefonos */
+@media (max-width: 600px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    [id="header"] {
+        width: 100vw;
+        height: 8vh;
+    }
+
+    [id="buttonList"] {
+        display: none;
+    }
+
+    [id="Inicio"] {
+        flex-direction: column;
+        height: auto;
+        padding-top: 10vh;
+    }
+
+    [id="card_inicio"] {
+        width: auto;
+        height: auto;
+        margin: 8vh 10vw 5vh 10vw;
+        padding: 4vh;
+    }
+
+    [id="cardBody_home"] {
+        justify-content: center;
+    }
+
+    [id="title_home"],
+    [id="title_aboutMe"],
+    [id="title_habilities"],
+    [id="title_projects"],
+    [id="title_contact"] {
+        font-size: 38px;
+    }
+
+    [id="subtitle_home"],
+    [id="subtitle_aboutMe"] {
+        font-size: 22px;
+    }
+
+    [id="text_home"] {
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: justify;
+    }
+
+    [id="SobreMi"] {
+        height: auto;
+        padding: 5vh 5vw 5vh 5vw;
+    }
+
+    [id="container-card-image"] {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    [id="container-cardText"] {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    [id="text-aboutMe"] {
+        font-size: 12px;
+        line-height: 1.5;
+        text-align: justify;
+        padding: 8px;
+    }
+
+    [id="img_vector"] {
+        width: auto;
+        height: auto;
+        margin-top: 3vh;
+        padding: 2px;
+    }
+
+    [id="Habilidades"] {
+        height: auto;
+        align-items: flex-start;
+        padding: 5vh 5vw 5vh 5vw;
+    }
+
+    [id="container-titleHabilities"] {
+        width: 90vw;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    [id="container_grid"] {
+        overflow: hidden;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        width: 90vw;
+        height: 80vh;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 1%;
+    }
+
+    [id="mini"] {
+        width: 43vw;
+        height: auto;
+        align-items: center;
+    }
+
+    [id="mini"] img {
+        width: 50px;
+        height: 50px;
+    }
+
+    [id="mini"] h4 {
+        font-size: 17px;
+    }
+
+    [id="miniCardBody"] {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    [id="Proyectos"]{
+        height: auto;
+        padding: 5vh 5vw 5vh 5vw;
+    }
+
+    [id="div_general_projects"] {
+        justify-content: center;
+        align-items: center;
+    }
+
+    [id="div_projects"] {
+        width: 90vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    [id="card_project1"],
+    [id="card_project2"],
+    [id="card_project3"],
+    [id="card_project4"] {
+        width: 80vw;
+        height: auto;
+    }
+
+    [id="card_project1"] img,
+    [id="card_project2"] img,
+    [id="card_project3"] img,
+    [id="card_project4"] img{
+        width: 80vw;
+        height: 30vh;
+    }
+
+    [id="subtitle_proyect"]{
+        font-size: 20px;
+    }
+
+    [id="text_project"]{
+        font-size: 11px;
+        line-height: 15px;
+        text-align: justify;
+    }
+
+    [id="button_project"], [id="button_projectMargin"]{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    [id="Contactame"]{
+        height: auto;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+
+    [id="container_general_contact"]{
+        width: 90vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    [id="container_contact"]{
+        flex-direction: column;
+    }
+
+    [id="card_contact"]{
+        width: auto;
+        height: auto;
+        padding: "45px 30px";
+    }
+
+    [id="containerRedes"]{
+        flex-direction: row;
+    }
+
+    [id="text_contact"]{
+        width: 80vw;
+    }
+
+    [id="Footer"]{
+        max-width: 100vw;
+    }
+
+    .img_inicio {
+        width: 70vw;
+        height: 45vh;
+        margin-bottom: 10vh;
+    }
+
+    .img_vector {
+        width: 70vw;
+        height: 55vh;
+    }
+
+    .imgTelf{
+        width: 45vw;
+        height: 25vh;
+    }
+}
