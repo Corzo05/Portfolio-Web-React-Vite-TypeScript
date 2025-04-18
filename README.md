@@ -12,6 +12,7 @@
 - express: Framework ligero de backend para JS.
 - resend: API de envío de Emails.
 - sweetalert: Librería de alertas visualmente atractivas. 
+- vercel: Para el Build y correr el servidor `server.js`.
 
 ### :hammer::wrench: Instalación y uso:
 
@@ -36,6 +37,7 @@
 - express: Lightweight backend framework for JS.
 - resend: Email sending API.
 - sweetalert: Visually appealing alert library.
+- vercel: To build and run the `server.js` server.
 
 ### :hammer::wrench: Installation and Use:
 
